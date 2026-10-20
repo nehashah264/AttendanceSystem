@@ -1,0 +1,46 @@
+# Build output
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+[Ll]og/
+[Ll]ogs/
+
+# .NET
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Test and coverage
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+coverage*.json
+coverage*.xml
+
+# Local database
+*.db
+*.db-shm
+*.db-wal
+
+# Local configuration and secrets
+appsettings.*.local.json
+*.env
+secrets.json
+
+# Visual Studio and Rider
+.vs/
+.idea/
+*.rsuser
+_ReSharper*/
+*.DotSettings.user
+
+# OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store

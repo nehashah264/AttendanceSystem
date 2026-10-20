@@ -1,0 +1,26 @@
+@AttendanceSystem.Api_HostAddress = http://localhost:5155
+
+### Save daily attendance
+POST {{AttendanceSystem.Api_HostAddress}}/api/attendance/daily
+Content-Type: application/json
+
+{
+  "schoolId": 1,
+  "attendDate": "2026-10-22",
+  "submittedBy": "clerk",
+  "students": [
+    { "studentId": 1, "attendCode": "P", "minutesLate": 0, "notes": null }
+  ]
+}
+
+###
+
+GET {{AttendanceSystem.Api_HostAddress}}/api/attendance/students/1/history?schoolYear=2026-2027
+Accept: application/json
+
+###
+
+GET {{AttendanceSystem.Api_HostAddress}}/api/attendance/students/3/chronic-absenteeism?schoolYear=2026-2027
+Accept: application/json
+
+###
